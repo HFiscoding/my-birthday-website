@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffcccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-color: #ffcccc; }
+            100% { background-color: #ffe6e6; }
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin-top: 50px;
+            text-align: center;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .container:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #ff6699;
+            transition: color 0.5s ease, transform 0.5s ease;
+        }
+        h1:hover {
+            color: #ff0066;
+            transform: rotate(-5deg);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.5s ease, filter 0.5s ease;
+        }
+        img:hover {
+            transform: rotate(10deg) scale(1.1);
+            filter: brightness(1.2);
+        }
+        p {
+            color: #666;
+            font-size: 1.2em;
+        }
+        .balloons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .balloon {
+            width: 50px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff6666, #ff99cc);
+            margin: 0 10px;
+            position: relative;
+            animation: float 2s ease-in-out infinite alternate;
+        }
+        .balloon:before {
+            content: '';
+            width: 2px;
+            height: 30px;
+            background: #333;
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chúc Mừng Sinh Nhật!</h1>
+        <img src="C:\Users\Admin\Desktop\Coding\mt.jpg" alt="Ảnh sinh nhật">
+        <p>Chúc bạn một ngày sinh nhật thật vui vẻ và hạnh phúc!</p>
+        <div class="balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+    </div>
+</body>
+</html>
